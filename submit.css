@@ -1,8 +1,13 @@
+@import url(/Generica.otf);
+@font-face{
+    font-family: Generica;
+    src:  url(/Generica.otf)
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Generica;
 }
 
 body{
@@ -18,32 +23,41 @@ body{
     color: white;
 }
 #main img{
-    width: 200px;
+    width: 25%;
 }
-#main h1{
-    font-size: 69px;
+#main p{
+    font-size: 29px;
+    font-weight: 100;
+    margin-top: -50px;
+    margin-bottom: 40px;
 }
 
-#main h2{
-    font-size: 26px;
-    margin: 20px 0;
-}
 
 .back{
     padding: 20px;
-    width: 40%;
+    width: 20%;
     font-size: 24px;
-    border-radius: 10px;
+    border-radius: 200px;
     cursor: pointer;
-    border: 2px solid black;
+    border: 3px solid white;
     outline: none;
-    background: white;
-    color: black;
+    background: black;
+    color: white;
+    font-weight: 500;
+
     transition: all 0.4s;
     margin: 10px 0;
 }
+
+.back:hover {
+    background-color: white;
+}
+
+.back:hover a{
+    color: black;
+}
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     display: block;
 }
